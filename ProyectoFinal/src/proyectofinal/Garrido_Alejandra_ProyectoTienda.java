@@ -36,7 +36,7 @@ public class Garrido_Alejandra_ProyectoTienda {
             System.out.println("4. Reportes");
             System.out.println("5. Cierre de Caja");
             System.out.println("6. Salir del Sistema");
-            System.out.print("Seleccione una opción: ");
+            System.out.print("Seleccione una opcion: ");
             int opcion = lea.nextInt();
 
             if (opcion == 1) {
