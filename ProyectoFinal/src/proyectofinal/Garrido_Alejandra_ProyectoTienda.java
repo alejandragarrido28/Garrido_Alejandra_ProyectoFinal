@@ -86,6 +86,10 @@ public class Garrido_Alejandra_ProyectoTienda {
                         int codigo = 0;
                         try {
                             System.out.print("Código producto (1-4): ");
+                            System.out.println("1. Azucar - 30 ");
+                            System.out.println("2. Avena - 25");
+                            System.out.println("3. Trigo - 32");
+                            System.out.println("4. Maiz - 20");
                             codigo = lea.nextInt();
                         } catch (InputMismatchException e) {
                             System.out.println("[Error] Código inválido.");
@@ -234,6 +238,10 @@ public class Garrido_Alejandra_ProyectoTienda {
                     char tipoProv = lea.next().toUpperCase().charAt(0);
 
                     System.out.print("Código producto (1-4): ");
+                    System.out.println("1. Azucar - 25 ");
+                    System.out.println("2. Avena - 20 o 22");
+                    System.out.println("3. Trigo - 30");
+                    System.out.println("4. Maiz - 18");
                     int codCompra = lea.nextInt();
 
                     String nombreCompra = "";
