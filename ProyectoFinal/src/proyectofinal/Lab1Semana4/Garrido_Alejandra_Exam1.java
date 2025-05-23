@@ -88,8 +88,38 @@ public class Garrido_Alejandra_Exam1 {
                     }
                     System.out.println("¡Gracias por jugar!");
                     break;
-                    }
-           
+                    
+                    //Adivinar
+                case 4: 
+                    System.out.println("Adivina el número del 1 al 100");
+                    Random adivinar = new Random();
+                    int numAdivinar = adivinar.nextInt(100) + 1;
+                    int intentos = 0;
+                    int intentodelUsuario = 0;
+                    boolean adivinado = false;
+                    
+                    while (intentos < 10 && !adivinado){
+                        System.out.println("Intento #" + (intentos +1)+" Adivina el número: ");
+                        intentodelUsuario = lea.nextInt();
+                        intentos++;
+                        
+                        if (intentodelUsuario == numAdivinar){
+                            System.out.println("¡Adivinaste! Lo lograste en "+intentos+" intentos");
+                            adivinado= true;
+                        }else if (intentodelUsuario < numAdivinar){
+                            System.out.println("El número que intentas adivinar es mayor.");
+                        }else {
+                            System.out.println("El número que intentas adivinar es menor.");
+                        }
+                }
+                
+                if (!adivinado){
+                    System.out.println("Ya no tienes más intentos, el número a adivinar era: "+ numAdivinar);                   
+                }
+                break;
+                
+                }
+                
             }
         }
         
