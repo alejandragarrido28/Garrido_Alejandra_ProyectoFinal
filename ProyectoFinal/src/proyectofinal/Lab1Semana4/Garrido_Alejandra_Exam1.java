@@ -27,8 +27,20 @@ public class Garrido_Alejandra_Exam1 {
             switch (opcion){
                 //Piramide
                 case 1: 
-                    System.out.println("");
-                    
+                    System.out.println("Ingresa la cantidad de fila (s) para la piramide");
+                    int cantidad = lea.nextInt();
+                    int num = 1;
+
+                    for (int i = 1; i <= cantidad; i++) {
+                        int sumaFila = 0;
+                        for (int j = 0; j < i; j++) {
+                            System.out.print(num + " ");
+                            sumaFila += num;
+                            num += 2; 
+                        }
+                        System.out.println("= " + sumaFila);
+                    }
+                    break;
                 //Clave
                 case 2:
                     System.out.println("Cifrado por inversión");
@@ -118,6 +130,7 @@ public class Garrido_Alejandra_Exam1 {
                 }
                 break;
                 
+                //Salir del programa
                 case 5:
                     System.out.println("¡Gracias por probar mi programa, te espero pronto!");
                     break;
