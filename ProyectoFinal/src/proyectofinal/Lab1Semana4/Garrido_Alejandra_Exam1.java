@@ -118,6 +118,12 @@ public class Garrido_Alejandra_Exam1 {
                 }
                 break;
                 
+                case 5:
+                    System.out.println("¡Gracias por probar mi programa, te espero pronto!");
+                    break;
+                default: 
+                    System.out.println("¡Esta opción no es válida, intenta de nuevo!");
+                    break;
                 }
                 
             }
